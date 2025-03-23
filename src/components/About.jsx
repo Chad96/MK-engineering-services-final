@@ -19,6 +19,7 @@ function About() {
           <Col md={6}>
             <p>Founded in 2024, MK Engineering Services SA is a forward-thinking engineering firm dedicated to empowering businesses and partners to navigate the complexities of engineering.</p>
             <p>Our mission is to provide tailored engineering services that meet the unique needs of our clients, delivering innovative and effective solutions.</p>
+            <p> As a startup, we are commited to delivering tailored engineering services, product supply, and project management solutions that meet the unique needs of each clients.</p>
             <h4>Mission</h4>
             <p>Our mission is to provide comprehensive engineering services tailored to the unique needs of our clients. We strive to be the trusted partner for businesses in the engineering sector, delivering innovative solutions that enhance efficiency, boost productivity, and drive long-term success.</p>
             <h4>Vision</h4>

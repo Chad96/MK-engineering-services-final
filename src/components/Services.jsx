@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import ServicesBg from '../assets/bg.jpg';       // Background image for section
+import ServicesBg from '../assets/serv.jpg';       // Background image for section
 import ConsultingImg from '../assets/consult.jpg';    // Image for Engineering Consulting
 import SupplyImg from '../assets/supply.jpg';            // Image for Product Supply
 import ManagementImg from '../assets/manage.jpg';    // Image for Project Management
@@ -51,11 +51,20 @@ function Services() {
       }}
     >
       <Container>
-        <h2 className="text-center mb-4 text-white">Our Services</h2> {/* Added text-white for visibility */}
+        <h2 
+          className="text-center"
+          style={{ 
+            marginTop: '-150px',    // Keeps it moved up
+            marginBottom: '90px',   // Keeps increased space below
+            color: 'black'        // Maroon color
+          }} 
+        >
+          Our Services
+        </h2>
         <Row>
           {services.map((service, index) => (
             <Col md={4} key={index} className="mb-4">
-              <Card className="h-100"> {/* h-100 ensures equal card heights */}
+              <Card className="h-100">
                 <Card.Img 
                   variant="top" 
                   src={service.image} 

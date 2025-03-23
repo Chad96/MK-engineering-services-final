@@ -33,11 +33,11 @@ function Home() {
             <p 
               className="lead"
               style={{
-                color: '#800000',  // Dark Turquoise
+                color: 'white',  // Dark Turquoise
                 fontSize: '2rem'  // Larger than default lead (~1.25rem)
               }}
             >
-              Engineering. Supply. Management
+              <strong>Engineering. Supply. Management</strong>
             </p>
             <p 
               className="mb-4"
