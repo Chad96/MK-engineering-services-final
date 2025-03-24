@@ -54,13 +54,15 @@ function Services() {
         <h2 
           className="text-center"
           style={{ 
-            marginTop: '-150px',    // Keeps it moved up
+            marginTop: '-100px',    // Keeps it moved up
             marginBottom: '90px',   // Keeps increased space below
             color: 'black'        // Maroon color
           }} 
         >
           Our Services
         </h2>
+        <h5>At MK Engineering Services SA, we offer a range of tailored engineering solutions, including: </h5>
+        <br></br>
         <Row>
           {services.map((service, index) => (
             <Col md={4} key={index} className="mb-4">
