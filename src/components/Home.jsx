@@ -1,64 +1,31 @@
-import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-scroll';
-import HeroBg from '../assets/hero.jpg';  // Your image
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-scroll";
+import HeroBg from "../assets/hero.jpg";
+import "./Home.css"; // Import the CSS
 
 function Home() {
   return (
-    <section 
-      id="home" 
-      className="home-section d-flex align-items-center justify-content-center"
-      style={{ 
-        backgroundImage: `url(${HeroBg})`,
-        backgroundSize: 'cover',          // Covers the section
-        backgroundPosition: 'center',     // Centers the image
-        backgroundRepeat: 'no-repeat',    // Prevents tiling
-        minHeight: '100vh',              // Full viewport height
-        margin: 0,                       // No margins
-        padding: 0                       // No padding
-      }}
-    >
+    <section id="home" className="home-section d-flex align-items-center justify-content-center">
       <Container fluid className="p-0">
         <Row className="text-center w-100 m-0">
           <Col>
-          <h1 
-              className="display-4"
-              style={{
-                color: 'white',  // White text for contrast
-                fontSize: '5rem'  // Larger than default display-4 (~3rem)
-              }}
-            >
+            <h1 className="display-4">
               <strong>MK Engineering Services SA</strong>
             </h1>
-            <p 
-              className="lead"
-              style={{
-                color: 'white',  // Dark Turquoise
-                fontSize: '2rem'  // Larger than default lead (~1.25rem)
-              }}
-            >
-              <strong>Engineering. Supply. Management</strong>
+            <p className="lead">
+              <strong>Engineering | Supply | Management</strong>
             </p>
-            <p 
-              className="mb-4"
-              style={{
-                color: 'white',  // Pale Green
-                fontSize: '1.75rem' // Larger than default (~1rem)
-              }}
-            >
+            <p className="mb-4">
               Empowering businesses with innovative engineering solutions.
             </p>
-            <Button 
-              variant="primary" 
-              as={Link} 
-              to="contact" 
-              smooth={true} 
+            <Button
+              variant="primary"
+              as={Link}
+              to="contact"
+              smooth={true}
               duration={500}
-              style={{
-                backgroundColor: '#800000',  // Maroon
-                borderColor: '#800000',      // Matching border
-                color: '#ffffff',            // White text for contrast
-              }}
+              className="home-button"
             >
               Get in Touch
             </Button>
