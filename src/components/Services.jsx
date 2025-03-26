@@ -4,7 +4,7 @@ import ServicesBg from "../assets/serv.jpg";
 import ConsultingImg from "../assets/consult.jpg";
 import SupplyImg from "../assets/supply.jpg";
 import ManagementImg from "../assets/manage.jpg";
-import OptimizationImg from "../assets/opti.jpg"; // Add your new image here
+import OptimizationImg from "../assets/opti.jpg";
 import "./Services.css";
 
 function Services() {
@@ -64,8 +64,8 @@ function Services() {
           ))}
         </Row>
 
-        {/* New Process Optimization Section */}
-        <Row className="mt-5 align-items-center">
+        {/* Process Optimization Section */}
+        <Row className="mt-5 align-items-center optimization-section">
           <Col md={6} className="mb-4 mb-md-0">
             <h2 className="text-center text-md-start">Process Optimization</h2>
             <p>
@@ -78,6 +78,19 @@ function Services() {
               alt="Process Optimization"
               className="img-fluid rounded shadow"
             />
+          </Col>
+        </Row>
+
+        {/* Our Team Section - Aligned Left */}
+        <Row className="mt-5 align-items-center team-section">
+          <Col md={6} className="mb-4 mb-md-0">
+            <h2 className="text-center text-md-start">Our Team</h2>
+            <p>
+              Our team is composed of highly skilled engineers, project managers, and industry experts who bring a wealth of experience in delivering engineering excellence. With a deep understanding of industry best practices, we work closely with our clients to ensure every project is executed with precision, efficiency, and innovation.
+            </p>
+          </Col>
+          <Col md={6}>
+            {/* Optional: Add an image here if desired */}
           </Col>
         </Row>
       </Container>

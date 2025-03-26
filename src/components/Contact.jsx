@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import "./Contact.css"; // Import the CSS
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -14,24 +15,25 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send to an API)
     console.log(formData);
-    alert('Form submitted! Check console for data.');
+    alert("Form submitted! Check console for data.");
   };
 
   return (
-    <section id="contact" className="py-5 bg-light d-flex align-items-center justify-content-center">
+    <section id="contact" className="py-5 bg-light">
       <Container>
         <h2 className="text-center mb-4">Reach Out</h2>
         <Row className="justify-content-center">
           <Col md={8}>
-            <p className="text-center">
-              For inquiries or partnership opportunities, use the form below or email us at{' '}
-              <a href="mailto:info@mkengineeringsa.com" className="text-primary">
+            <p className="text-center intro-text">
+              For inquiries or partnership opportunities, use the form below or
+              email us at{" "}
+              <a href="mailto:info@mkengineeringsa.com" className="email-link">
                 info@mkengineeringsa.com
-              </a>. We respond within 24 hours.
+              </a>
+              . We respond within 24 hours.
             </p>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} className="contact-form">
               <Form.Group className="mb-3" controlId="formName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
@@ -67,12 +69,12 @@ function Contact() {
                 />
               </Form.Group>
               <div className="text-center">
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="submit" className="submit-btn">
                   Send Message
                 </Button>
               </div>
             </Form>
-            <div className="mt-4 text-center">
+            <div className="mt-4 map-container">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847632.0994285573!2d17.996640348826475!3d-33.91378097274572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1742819828454!5m2!1sen!2sza"
                 width="100%"
