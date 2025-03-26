@@ -4,7 +4,7 @@ import ServicesBg from "../assets/serv.jpg";
 import ConsultingImg from "../assets/consult.jpg";
 import SupplyImg from "../assets/supply.jpg";
 import ManagementImg from "../assets/manage.jpg";
-import OptimizationImg from "../assets/opti.jpg";
+import CombinedImg from "../assets/try.jpg"; // Replace with your actual image
 import "./Services.css";
 
 function Services() {
@@ -64,33 +64,28 @@ function Services() {
           ))}
         </Row>
 
-        {/* Process Optimization Section */}
-        <Row className="mt-5 align-items-center optimization-section">
+        {/* Combined Process Optimization and Our Team Section */}
+        <Row className="mt-5 combined-section">
           <Col md={6} className="mb-4 mb-md-0">
-            <h2 className="text-center text-md-start">Process Optimization</h2>
-            <p>
-              We collaborate with organizations to optimize operations, reduce costs, and enhance productivity. Our experts conduct in-depth analyses of existing processes, identify inefficiencies, and implement best practices that drive efficiency and improve overall profitability.
-            </p>
+            <div className="optimization-section">
+              <h2 className="text-center text-md-start">Process Optimization</h2>
+              <p>
+                We collaborate with organizations to optimize operations, reduce costs, and enhance productivity. Our experts conduct in-depth analyses of existing processes, identify inefficiencies, and implement best practices that drive efficiency and improve overall profitability.
+              </p>
+            </div>
+            <div className="team-section mt-4">
+              <h2 className="text-center text-md-start">Our Team</h2>
+              <p>
+                Our team is composed of highly skilled engineers, project managers, and industry experts who bring a wealth of experience in delivering engineering excellence. With a deep understanding of industry best practices, we work closely with our clients to ensure every project is executed with precision, efficiency, and innovation.
+              </p>
+            </div>
           </Col>
           <Col md={6}>
             <img
-              src={OptimizationImg}
-              alt="Process Optimization"
+              src={CombinedImg} // Single image for both sections
+              alt="Process Optimization and Our Team"
               className="img-fluid rounded shadow"
             />
-          </Col>
-        </Row>
-
-        {/* Our Team Section - Aligned Left */}
-        <Row className="mt-5 align-items-center team-section">
-          <Col md={6} className="mb-4 mb-md-0">
-            <h2 className="text-center text-md-start">Our Team</h2>
-            <p>
-              Our team is composed of highly skilled engineers, project managers, and industry experts who bring a wealth of experience in delivering engineering excellence. With a deep understanding of industry best practices, we work closely with our clients to ensure every project is executed with precision, efficiency, and innovation.
-            </p>
-          </Col>
-          <Col md={6}>
-            {/* Optional: Add an image here if desired */}
           </Col>
         </Row>
       </Container>

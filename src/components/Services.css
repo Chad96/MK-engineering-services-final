@@ -80,51 +80,44 @@
     margin-right: 8px;
   }
   
-  /* Process Optimization Section Styling */
-  #services .optimization-section h2 {
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+  /* Combined Section Styling */
+  #services .combined-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Light overlay for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    align-items: center; /* Vertically center content with image */
   }
   
-  #services .optimization-section p {
-    color: #fff;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    text-align: left;
-  }
-  
-  #services .optimization-section img {
-    max-height: 400px;
-    object-fit: cover;
-    width: 100%;
-    border: 2px solid #dee2e6;
-    transition: transform 0.3s ease;
-  }
-  
-  #services .optimization-section img:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Our Team Section Styling */
+  #services .optimization-section h2,
   #services .team-section h2 {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-    margin-top: -5%;
+    margin-bottom: 15px;
   }
   
+  #services .optimization-section p,
   #services .team-section p {
     color: #fff;
     font-size: 1.1rem;
     line-height: 1.8;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     text-align: left;
+    margin-bottom: 53px; /* Remove extra bottom margin */
+  }
+  
+  #services .combined-section img {
+    max-height: 500px; /* Taller to accommodate both text blocks */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  #services .combined-section img:hover {
+    transform: scale(1.05);
   }
   
   /* Responsive Adjustments */
@@ -160,31 +153,26 @@
       padding: 15px;
     }
   
-    /* Process Optimization Section */
-    #services .optimization-section h2 {
-      font-size: 2rem;
-      text-align: center;
+    /* Combined Section */
+    #services .combined-section {
+      padding: 20px;
     }
   
-    #services .optimization-section p {
-      font-size: 1rem;
-      text-align: center;
-    }
-  
-    #services .optimization-section img {
-      max-height: 300px;
-      margin-top: 20px;
-    }
-  
-    /* Our Team Section */
+    #services .optimization-section h2,
     #services .team-section h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       text-align: center;
     }
   
+    #services .optimization-section p,
     #services .team-section p {
       font-size: 1rem;
       text-align: center;
+    }
+  
+    #services .combined-section img {
+      max-height: 400px; /* Adjust for stacked layout */
+      margin-top: 20px;
     }
   }
   
@@ -223,25 +211,22 @@
       padding: 12px;
     }
   
-    /* Process Optimization Section */
-    #services .optimization-section h2 {
-      font-size: 1.8rem;
+    /* Combined Section */
+    #services .combined-section {
+      padding: 15px;
     }
   
-    #services .optimization-section p {
-      font-size: 0.95rem;
-    }
-  
-    #services .optimization-section img {
-      max-height: 250px;
-    }
-  
-    /* Our Team Section */
+    #services .optimization-section h2,
     #services .team-section h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   
+    #services .optimization-section p,
     #services .team-section p {
       font-size: 0.95rem;
+    }
+  
+    #services .combined-section img {
+      max-height: 300px;
     }
   }
